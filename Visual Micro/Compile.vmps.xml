@@ -1,0 +1,39 @@
+<VisualMicro>
+  <Program Name="MainStepperPing" Ext=".ino" Location="C:\Users\james\Documents\Arduino\MainStepperPing">
+    <Compile CompilerErrors="0" ConfigurationName="Debug" StopOnError="False" OptimiseLibs="True" OptimiseCore="True" BuildPath="C:\Users\james\AppData\Local\VMicro\Arduino\Builds\MainStepperPing\uno" SketchName="MainStepperPing" ReportDigitalPins="0" ReportAnalogPins="0" ReportI2C="0" ReportFreeMemory="0" IncludeDebug="1" LastDebugPreProcessorDefinitions="VM_DEBUG;VM_DEBUG_ENABLE 1;VM_DEBUG_BANDWIDTH_THROTTLE_MS 80;VM_DEBUGGER_TYPE_HARDWARESERIAL 0;VM_DEBUGGER_TYPE_SOFTWARESERIAL 1;VM_DEBUGGER_TYPE_FASTSERIAL 2;VM_DEBUGGER_TYPE_USB 3;VM_DEBUGGER_TYPE_TEENSY 4;VM_DEBUGGER_TYPE VM_DEBUGGER_TYPE_HARDWARESERIAL;" IncludesDebug="1" IsCompiled="1" />
+    <Debug DebugMode="Full" DebugEnabled="1" />
+    <Platform Name="Arduino">
+      <Board Name="uno" Description="Arduino Uno" CoreFolder="C:\Program Files\arduino\arduino-1.0.3\hardware\arduino\cores\arduino" VariantFullPath="C:\Program Files\arduino\arduino-1.0.3\hardware\arduino\variants\standard" McuIdePath="C:\Program Files\arduino\arduino-1.0.3\" compiler.path="C:\Program Files\arduino\arduino-1.0.3\hardware\tools\avr\bin\" includes=" -I&quot;C:\Program Files\arduino\arduino-1.0.3\hardware\arduino\cores\arduino&quot;  -I&quot;C:\Program Files\arduino\arduino-1.0.3\hardware\arduino\variants\standard&quot;  -I&quot;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\Arduino\Templates\Hardware\Debuggers\VM_DBG&quot;  -I&quot;C:\Program Files\arduino\arduino-1.0.3\libraries\AccelStepper&quot; " build.path="C:\Users\james\AppData\Local\VMicro\Arduino\Builds\MainStepperPing\uno" build.project_name="MainStepperPing" build.variant.path="C:\Program Files\arduino\arduino-1.0.3\hardware\arduino\variants\standard" archive_file="core.a" object_file="&quot;C:\Users\james\AppData\Local\VMicro\Arduino\Builds\MainStepperPing\uno\AccelStepper\AccelStepper.cpp.o&quot;" source_file="&quot;C:\Program Files\arduino\arduino-1.0.3\libraries\AccelStepper\AccelStepper.cpp&quot;" object_files="&quot;C:\Users\james\AppData\Local\VMicro\Arduino\Builds\MainStepperPing\uno\MainStepperPing.cpp.o&quot; &quot;C:\Users\james\AppData\Local\VMicro\Arduino\Builds\MainStepperPing\uno\VM_DBG\VM_mem_check.c.o&quot; &quot;C:\Users\james\AppData\Local\VMicro\Arduino\Builds\MainStepperPing\uno\VM_DBG\VM_DBG.cpp.o&quot; &quot;C:\Users\james\AppData\Local\VMicro\Arduino\Builds\MainStepperPing\uno\AccelStepper\AccelStepper.cpp.o&quot; " name="Arduino Uno" upload.protocol="arduino" upload.maximum_size="32256" upload.speed="115200" bootloader.low_fuses="0xff" bootloader.high_fuses="0xde" bootloader.extended_fuses="0x05" bootloader.path="optiboot" bootloader.file="optiboot_atmega328.hex" bootloader.unlock_bits="0x3F" bootloader.lock_bits="0x0F" build.mcu="atmega328p" build.f_cpu="16000000L" build.core="arduino" build.variant="standard" runtime.ide.path="C:\Program Files\arduino\arduino-1.0.3\" build.system.path="C:\Program Files\arduino\arduino-1.0.3\hardware\arduino\system" software="ARDUINO" runtime.ide.version="103" build.core.vmresolved="C:\Program Files\arduino\arduino-1.0.3\hardware\arduino\cores\arduino" build.core.parentfolder.vmresolved="C:\Program Files\arduino\arduino-1.0.3\hardware\arduino\cores" build.core.coresparentfolder.vmresolved="C:\Program Files\arduino\arduino-1.0.3\hardware\arduino" vm.core.include="arduino.h" vm.boardsource.path="C:\Program Files\arduino\arduino-1.0.3\hardware\arduino" vm.boardsource.name="boards.txt" vm.platformname.name="" build.variant.vmresolved="C:\Program Files\arduino\arduino-1.0.3\hardware\arduino\variants\standard" />
+    </Platform>
+    <VCCodeModel>
+      <VCCodeMacros />
+    </VCCodeModel>
+    <BreakPoints>
+      <BreakPoint Index="1" Name="MainStepperPing.ino, line 54" Id="d0314ae0-8f18-416a-b924-6714f3f99247" Enabled="1" Message="{currentPosition} {lastMeasuredPosition} {distance}" MessageTextType="0" PreProcessedMessage="{0} {1} {2}" Condition="" ConditionType="1" CurrentHits="0" File="C:\Users\james\Documents\Arduino\MainStepperPing\MainStepperPing.ino" FileLine="54" FileColumn="1" FunctionName="loop()" FunctionLineOffset="19" FunctionColumnOffset="1" HitCountTarget="1" HitCountType="1" Language="C++" LocationType="3" Tag="&lt;vmbp Id='d0314ae0-8f18-416a-b924-6714f3f99247'/&gt;" Type="1" ToString="System.__ComObject" BreakWhenHit="0">
+        <Source>47			
+48			
+49			if(currentPosition&lt;maxSteps){
+50				stepper.move(shiftAmount);
+51	
+52			}else{
+53				direction = false;
+--&gt;54	
+55				//Serial.print(new_time - old_time);
+56				//Serial.print(" millis");
+57				//Serial.println();
+58				//old_time = new_time;
+59				//new_time = millis();
+60	
+61	
+62				measureCount = 0;
+63	
+</Source>
+        <MessageVariables>
+          <MessageVariable Name="currentPosition" Index="1" />
+          <MessageVariable Name="lastMeasuredPosition" Index="2" />
+          <MessageVariable Name="distance" Index="3" />
+        </MessageVariables>
+      </BreakPoint>
+    </BreakPoints>
+  </Program>
+</VisualMicro>
